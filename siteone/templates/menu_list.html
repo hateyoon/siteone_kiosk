@@ -1,0 +1,15 @@
+<!-- templates/kiosk/menu_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu List</title>
+</head>
+<body>
+    <h1>Menu List</h1>
+    <ul>
+        {% for menu in menus %}
+            <li>{{ menu.name }} - ${{ menu.price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
